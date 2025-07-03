@@ -9,7 +9,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: 'https://final-receipt-project.onrender.com', // Frontend ka URL
+  origin: 'https://final-receipt-backend.onrender.com/api', // Frontend ka URL
   credentials: true
 }));
 
