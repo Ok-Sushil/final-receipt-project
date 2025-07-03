@@ -1,0 +1,83 @@
+.admin-dashboard-container {
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.admin-dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-input,
+.filter-select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  min-width: 150px;
+  flex: 1;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.filter-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-button:hover {
+  background-color: #1e40af;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  min-width: 800px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+}
+
+.data-table thead tr {
+  background-color: #e2e8f0; /* Light gray/blue */
+  font-weight: 700;
+  color: #333;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f1f5f9; /* subtle hover */
+}
+
+.data-table td {
+  color: #555;
+}
+

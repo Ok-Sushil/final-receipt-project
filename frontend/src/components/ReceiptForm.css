@@ -1,0 +1,46 @@
+.receipt-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.receipt-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.receipt-button {
+    background-color: #2563eb; /* Blue */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.receipt-button:hover {
+    background-color: #1e40af; /* Darker blue */
+}
+
+.receipt-button-green {
+    background-color: #22c55e; /* Green */
+}
+
+.receipt-button-green:hover {
+    background-color: #15803d; /* Darker green */
+}
+
+.receipt-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
