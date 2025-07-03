@@ -11,7 +11,7 @@ export default function ReceiptForm() {
 
     const fetchDetails = async () => {
         try {
-            const res = await API.post('/receipt/getCustomer', { customerId });
+            const res = await API.post('api/receipt/getCustomer', { customerId });
             setName(res.data.name);
         } catch {
             alert("Invalid Customer ID");
@@ -21,7 +21,7 @@ export default function ReceiptForm() {
     const generateReceipt = async () => {
         try {
             const enteredBy = localStorage.getItem('username');
-            const res = await API.post('/receipt/generate', 
+            const res = await API.post('api/receipt/generate', 
                 { customerId, amount, enteredBy },
                 { responseType: 'blob' }
             );

@@ -14,12 +14,12 @@ export default function AdminDashboard() {
     }, []);
 
     const fetchData = async () => {
-        const res = await API.get('/receipt');
+        const res = await API.get('api/receipt');
         setData(res.data);
     };
 
     const fetchUsers = async () => {
-        const res = await API.get('/receipt/users');
+        const res = await API.get('api/receipt/users');
         setUniqueUsers(res.data);
     };
 
