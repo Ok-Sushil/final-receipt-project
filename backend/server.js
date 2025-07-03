@@ -9,7 +9,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Frontend ka URL
+  origin: 'https://final-receipt-project.onrender.com', // Frontend ka URL
   credentials: true
 }));
 
@@ -20,3 +20,5 @@ app.use('/api/receipt', require('./routes/receiptRoutes'));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
